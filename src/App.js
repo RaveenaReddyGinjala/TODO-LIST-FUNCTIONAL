@@ -6,6 +6,8 @@ import { IoAddCircle } from "react-icons/io5";
 
 function App() {
 
+  console.log("ToDO List")
+
 const [items,setItems]=useState(localStorage.getItem("ToDoList")? JSON.parse(localStorage.getItem("ToDoList")):[] );
 const [currentItems, setCurrentItems]=useState({text:'', key:'',completed:false,isEditingEnabled:false})
 
