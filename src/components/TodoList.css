@@ -1,0 +1,47 @@
+.Todo-List{
+    display: flex;
+    flex-direction:column;
+    width: 90%;
+}
+.Todo-Item{
+    display: flex;
+    flex-direction:row; 
+    height: 50px; 
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+    margin-top: 10px;
+    border-radius: 10px;
+ 
+}
+
+.Todo-Item>input[type= 'text']{
+    width:80%;
+    border:none; 
+    background-color: yellow;
+}
+.Todo-Item>input[type= 'text']:focus{
+   outline: none; 
+   
+}
+
+.Todo-Item>input[type= 'checkbox']{
+    margin-right: 10px;
+    width:22px;
+    height: 22px;    
+}
+.Todo-Item>p{
+    width:80%;
+  
+}
+
+.icon-enabled{
+    cursor: pointer;
+
+}
+.icon-disabled { 
+ 
+    opacity:0.3;
+    pointer-events: none;
+    
+}

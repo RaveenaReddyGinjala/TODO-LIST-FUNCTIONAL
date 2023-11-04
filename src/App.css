@@ -1,0 +1,46 @@
+.App{
+  display: flex;
+  justify-content: center;
+  height: 100%;
+
+}
+
+.todo-container{
+  width: 40%;
+  margin: 100px 0px;
+  background-color: brown;
+  border-radius: 15px;
+  min-height:500px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 20px;
+}
+
+.todo-container>form{
+  display: flex;
+ flex-direction: row;
+ justify-content: space-around;
+ width: 100%;
+}
+
+.todo-container>form>input{
+  height: 25px;
+  width: 70%;
+  border: none;
+  background-color: brown;
+  border-bottom: 2px solid white ;
+  outline: none;
+  caret-color: white;
+}
+
+.todo-container>form>input::placeholder {
+  color: rgb(173, 164, 164);
+}
+
+/* .add-button{
+  position: relative;
+} */
+
+
+
