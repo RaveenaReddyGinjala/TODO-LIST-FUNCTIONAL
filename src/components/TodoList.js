@@ -27,32 +27,28 @@ function TodoList(props) {
                 item.isEditingEnabled ?
                 <>
                 <input type="text" id={item.key} defaultValue={item?.text} onChange={handleChange}/> 
-                
                 <AiFillCheckCircle
-              onClick={() => {
+                 onClick={() => {
                 props.updateTodo(item.key, newTodo ? newTodo : item.text);
                 setnewTodo("");
               }}
-              fontSize={32}
-            />
+                 fontSize={32}
+                />
                 </> :
                 <>
                 <p style={{textDecoration : item.completed ? 'line-through': 'none'}}>{item.text} </p> 
                 {/* <button onClick={()=>{props.editTodo(item.key); cursorFocus(item.key)}} disabled={item.completed}  >EDIT</button> */}
 
-                <MdEditSquare
-                className={item.completed ? "icon-disabled" : "icon-enabled" }
-               onClick={()=>{props.editTodo(item.key); cursorFocus(item.key)}}
-              disabled={item.completed}
-              fontSize={32}
-             
-            />
+                 <MdEditSquare
+                 className={item.completed ? "icon-disabled" : "icon-enabled" }
+                onClick={()=>{props.editTodo(item.key); cursorFocus(item.key)}}
+                 disabled={item.completed}
+                   fontSize={32}
+             />
                 </>
-
-                }
-                
-
-                {/* <button onClick={()=>props.deleteTodo(item.key)}>DEL</button>
+             }
+            
+        {/* <button onClick={()=>props.deleteTodo(item.key)}>DEL</button>
              */}
              <AiFillDelete
          className={item.isEditingEnabled ? "icon-disabled" : "icon-enabled" }
@@ -60,7 +56,7 @@ function TodoList(props) {
           fontSize={32}
         />
 
-            </div>
+    </div>
         )            
     })
 return(

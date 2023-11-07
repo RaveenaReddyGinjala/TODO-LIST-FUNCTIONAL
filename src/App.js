@@ -48,8 +48,7 @@ function editTodo(key){
    setItems(newList)
 }
 function updateTodo(key,newText){
-  console.log(newText)
-  console.log(newText.trim().length)
+  
   const newList=items?.map((item)=>{
     if(item.key===key)
     {
