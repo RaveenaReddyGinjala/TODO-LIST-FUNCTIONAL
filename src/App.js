@@ -39,6 +39,7 @@ function App() {
       setItems(updatedList);
       localStorage.setItem("ToDoList", JSON.stringify(updatedList));
       setCurrentItems({ text: "", key: "" });
+      toast.success("Item Added Successfully!");
     } else toast.warn("Input cannot be empty!");
     // alert("Input cannot be empty!");
   }
@@ -60,6 +61,7 @@ function App() {
         if (newText.trim().length) {
           item.isEditingEnabled = false;
           item.text = newText;
+          toast.success("Item Updated Successfully!");
         } else {
           toast.warn("Edited ToDo cannot be Empty!");
           // alert("Edited ToDo cannot be Empty!");
@@ -83,6 +85,7 @@ function App() {
 
     setItems(newundeletedList);
     localStorage.setItem("ToDoList", JSON.stringify(newundeletedList));
+    toast.success("Item Deleted Successfully!");
   }
 
   function completedTodo(key) {
