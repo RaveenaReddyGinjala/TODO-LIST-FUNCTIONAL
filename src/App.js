@@ -41,7 +41,6 @@ function App() {
       setCurrentItems({ text: "", key: "" });
       toast.success("Item Added Successfully!");
     } else toast.warn("Input cannot be empty!");
-    // alert("Input cannot be empty!");
   }
 
   function editTodo(key) {
@@ -64,7 +63,6 @@ function App() {
           toast.success("Item Updated Successfully!");
         } else {
           toast.warn("Edited ToDo cannot be Empty!");
-          // alert("Edited ToDo cannot be Empty!");
         }
       }
 
