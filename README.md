@@ -10,14 +10,14 @@ Technical Stack:
 React Js, React functional components,Reack Hooks, HTML,CSS,Toastify
 
 This Project Include:
- - Add Todo item to the list
- - Edit exiting Todo Item in the list
- - Delete Todo item in the list
- - Mark an existing Todo item as completed
- - Toastify is used to notify when item is added,edited and deleted
+ - Adding Todo items to the list.
+ - Editing existing Todo items in the list.
+ - Deleting Todo items from the list.
+ - Marking an existing Todo item as completed.
+ - Utilization of Toastify for notifications when items are added, edited, or deleted.
 
 Validations:
- - Cannot add empty item to the list
- - Cannot update an empty item to the list
+ - Prevents addition of empty items to the list.
+ - Ensures that items cannot be updated to empty values.
    
 
